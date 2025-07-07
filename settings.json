@@ -1,0 +1,105 @@
+{
+  "terminal.integrated.inheritEnv": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 17,
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line",
+  "editor.fontLigatures": false, //"'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'calt', 'liga'",
+  "editor.fontFamily": "\"JetBrainsMonoNL Nerd Font Mono\"",
+  "editor.overviewRulerBorder": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.lineHeight": 1.8,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "files.insertFinalNewline": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  "explorer.compactFolders": false,
+  "python.createEnvironment.trigger": "off",
+  "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono', 'Consolas', 'Courier New', monospace",
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"},
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "workbench.activityBar.location": "top",
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "window.commandCenter": false,
+  "window.openFilesInNewWindow": "off",
+  "workbench.productIconTheme": "material-product-icons",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "workbench.sideBar.location": "right",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.indent": 16,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "terminal.integrated.tabs.enabled": false,
+  "workbench.editor.tabSizing": "shrink",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "security.workspace.trust.banner": "never",
+  "git.autofetch": true,
+  "files.exclude": {
+    "**/__pycache__/": true,
+    ".idea": true,
+    "*.pyc": true,
+  },
+  "redhat.telemetry.enabled": true,
+  "ruff.nativeServer": "on",
+  "ruff.lint.select": ["C", "E", "F"],
+  "ruff.lineLength": 320,
+  "cSpell.language": "en,ru",
+  "indentRainbow.errorColor": "rgba(0,0,0,0)",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+  "terminal.integrated.suggest.runOnEnter": "never",
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+  "terminal.integrated.suggest.providers": {
+    "terminal-suggest": false,
+    "pwsh-shell-integration": false,
+  },
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 2,
+  "database-client.autoSync": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 0.8,
+  "[shellscript]": {
+    "files.eol": "\n",
+    "editor.defaultColorDecorators": "never"
+  },
+  "makefile.configureOnOpen": true,
+  "workbench.preferredHighContrastColorTheme": "Aura Dracula Spirit",
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.colorTheme": "Aura Dracula Spirit",
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-http-request-pre-request.instructions.md": true
+  },
+}
