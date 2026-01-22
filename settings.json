@@ -7,7 +7,7 @@
   "editor.renderLineHighlight": "none",
   "editor.scrollbar.horizontal": "hidden",
   "editor.accessibilitySupport": "off",
-  "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "none",
   "workbench.editor.showIcons": false,
   "editor.scrollbar.vertical": "auto",
   "workbench.editor.labelFormat": "short",
@@ -38,6 +38,11 @@
   "editor.wordWrap": "on",
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "compact",
+  "window.menuStyle": "custom",
+  "workbench.layoutControl.enabled":false,
+  "window.customTitleBarVisibility": "never",
   "workbench.productIconTheme": "material-product-icons",
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
@@ -169,4 +174,6 @@
       "matchCommandLine": true
     }
   },
+  "workbench.editor.editorActionsLocation": "hidden",
+  "chat.commandCenter.enabled": false,
 }
