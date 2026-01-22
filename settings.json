@@ -1,12 +1,17 @@
 {
   "terminal.integrated.inheritEnv": false,
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 17,
+  "editor.fontSize": 20,
   "editor.guides.indentation": false,
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "none",
   "editor.scrollbar.horizontal": "hidden",
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.showIcons": false,
   "editor.scrollbar.vertical": "auto",
+  "workbench.editor.labelFormat": "short",
+  "editor.codeLens": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
   "editor.fontLigatures": false, //"'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'calt', 'liga'",
@@ -21,15 +26,14 @@
   "breadcrumbs.enabled": false,
   "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": true,
-  "explorer.confirmDelete": true,
+  "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
-  "python.createEnvironment.trigger": "off",
   "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono', 'Consolas', 'Courier New', monospace",
   "terminal.integrated.lineHeight": 1.5,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"},
   "jupyter.notebookFileRoot": "${workspaceFolder}",
-  "workbench.activityBar.location": "top",
+  "workbench.activityBar.location": "hidden",
   "files.autoSave": "afterDelay",
   "editor.wordWrap": "on",
   "window.commandCenter": false,
@@ -54,6 +58,8 @@
     "**/__pycache__/": true,
     ".idea": true,
     "*.pyc": true,
+    "**/.venv/": true,
+    "**/.ruff_cache/": true,
   },
   "redhat.telemetry.enabled": true,
   "ruff.nativeServer": "on",
@@ -88,7 +94,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 0.8,
   "[shellscript]": {
     "files.eol": "\n",
     "editor.defaultColorDecorators": "never"
@@ -96,10 +101,72 @@
   "makefile.configureOnOpen": true,
   "workbench.preferredHighContrastColorTheme": "Aura Dracula Spirit",
   "docker.extension.enableComposeLanguageServer": false,
-  "workbench.colorTheme": "Aura Dracula Spirit",
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
     "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-http-request-post-response.instructions.md": true,
-    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-http-request-pre-request.instructions.md": true
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/jt/td1t_8ls7fs_r9n3jhytpr_c0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "gopls": { "ui.semanticTokens": true },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "postman.mcp.notifications.postmanMCP": false,
+  "workbench.colorTheme": "Ayu Dark",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "chat.tools.terminal.autoApprove": {
+    "d\\.ts)$'": true,
+    "./node_modules/.bin/tsc": true,
+    "/dev/null": true,
+    "node": true,
+    "console.log('Controller": true,
+    "console.log('Has": true,
+    "}).catch(e": true,
+    "console.error('Error:',": true,
+    "console.log('eventBus": true,
+    "node -e \"import('./lib/zigbee2mqtt/dist/extension/bind.js').then(m => console.log('extension/bind loaded')).catch(e => console.error('Error:', e.message))\"": {
+      "approve": true,
+      "matchCommandLine": true
+    }
   },
 }
