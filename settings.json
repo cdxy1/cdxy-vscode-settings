@@ -28,30 +28,31 @@
   "explorer.confirmDragAndDrop": true,
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
+  "python.createEnvironment.trigger": "off",
   "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono', 'Consolas', 'Courier New', monospace",
   "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}"},
+  "terminal.integrated.env.osx": { "PYTHONPATH": "${workspaceFolder}" },
   "jupyter.notebookFileRoot": "${workspaceFolder}",
   "workbench.activityBar.location": "hidden",
   "files.autoSave": "afterDelay",
   "editor.wordWrap": "on",
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom", // На линукс тут native
   "window.menuBarVisibility": "compact",
   "window.menuStyle": "custom",
-  "workbench.layoutControl.enabled":false,
+  "workbench.layoutControl.enabled": false,
   "window.customTitleBarVisibility": "never",
   "workbench.productIconTheme": "material-product-icons",
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "workbench.sideBar.location": "right",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 16,
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "terminal.integrated.tabs.enabled": false,
@@ -76,7 +77,7 @@
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
     "arguments": "on",
-    "unknown": "off"
+    "unknown": "off",
   },
   "terminal.integrated.suggest.runOnEnter": "never",
   "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
@@ -88,20 +89,21 @@
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "database-client.autoSync": true,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+  "window.zoomLevel": 0.8,
   "[shellscript]": {
     "files.eol": "\n",
-    "editor.defaultColorDecorators": "never"
+    "editor.defaultColorDecorators": "never",
   },
   "makefile.configureOnOpen": true,
   "workbench.preferredHighContrastColorTheme": "Aura Dracula Spirit",
@@ -119,10 +121,10 @@
     "/tmp/postman-folder-post-response.instructions.md": true,
     "/tmp/postman-folder-pre-request.instructions.md": true,
     "/tmp/postman-http-request-post-response.instructions.md": true,
-    "/tmp/postman-http-request-pre-request.instructions.md": true
+    "/tmp/postman-http-request-pre-request.instructions.md": true,
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
@@ -140,10 +142,10 @@
     "*.sqlite3": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
+    "*.s3db": "${capture}.${extname}-*",
   },
   "postman.mcp.notifications.postmanMCP": false,
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "GitHub Dark Default",
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -151,12 +153,12 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "workbench.editor.empty.hint": "hidden",
   "chat.tools.terminal.autoApprove": {
@@ -171,9 +173,10 @@
     "console.log('eventBus": true,
     "node -e \"import('./lib/zigbee2mqtt/dist/extension/bind.js').then(m => console.log('extension/bind loaded')).catch(e => console.error('Error:', e.message))\"": {
       "approve": true,
-      "matchCommandLine": true
-    }
+      "matchCommandLine": true,
+    },
   },
   "workbench.editor.editorActionsLocation": "hidden",
   "chat.commandCenter.enabled": false,
+  "jupyter.askForKernelRestart": false,
 }
